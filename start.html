@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VFM-Visual Form Maker</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- GITHUB BUTTON JS -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+</head>
+
+<body class="body-blue">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon"><img src="images/logo-icon-32x32.png" /></span>
+                            <span class="text-highlight">VFM</span> <span class="text-bold">Visual Form Maker</span>
+                        </a>
+                    </h1>
+
+                </div>
+                <!--//branding-->
+
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Quick Start</li>
+                </ol>
+
+                <div class="top-search-box">
+                    <!-- <form class="form-inline search-form justify-content-center" action="" method="get">
+	            
+			            <input type="text" placeholder="Search..." name="search" class="form-control search-input">
+			            
+			            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+			            
+			        </form> -->
+                </div>
+
+            </div>
+            <!--//container-->
+        </header>
+        <!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Quick Start</h1>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: 25/07/2020</div>
+                </div>
+                <!--//doc-header-->
+                <div class="doc-body row">
+                    <!-- doc-sidebar -->
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                                <a class="nav-link scrollto" href="#introduction-section">Introduction</a>
+                                <nav class="doc-sub-menu nav flex-column">
+                                    <a class="nav-link scrollto" href="#features">Features</a>
+                                </nav>
+                                <a class="nav-link scrollto" href="#installation-section">Installation</a>
+                                <nav class="doc-sub-menu nav flex-column">
+                                    <a class="nav-link scrollto" href="#requirements">Requirements</a>
+                                    <a class="nav-link scrollto" href="#installing">Installing</a>
+                                    <a class="nav-link scrollto" href="#configuration">Configuration</a>
+                                    <a class="nav-link scrollto" href="#application_installation">Application
+                                        Installation Process</a>
+                                </nav>
+                                <!--//nav-->
+                                <a class="nav-link scrollto" href="#usage-section">Usage</a>
+                                <nav class="doc-sub-menu nav flex-column">
+                                    <a class="nav-link scrollto" href="#dashboard">Dashboard</a>
+                                    <a class="nav-link scrollto" href="#forms">Forms</a>
+                                    <a class="nav-link scrollto" href="#my_submissions">My Submissions</a>
+                                    <a class="nav-link scrollto" href="#users">Users</a>
+                                    <a class="nav-link scrollto" href="#groups">Groups/Roles</a>
+                                    <a class="nav-link scrollto" href="#organization">Organization</a>
+                                </nav>
+                                <!--//nav-->
+                                <a class="nav-link scrollto" href="#settings-section">Settings</a>
+                            </nav>
+                            <!--//doc-menu-->
+
+                        </div>
+                    </div>
+                    <!--//doc-sidebar-->
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            <section id="introduction-section" class="doc-section">
+                                <h2 class="section-title">Introduction</h2>
+                                <div class="section-block">
+                                    <p>
+                                        VisualFormMaker is web application based on
+                                        <a href="https://github.com/laravel/laravel" target="_blank">laravel</a>
+                                        framework and
+                                        <a href="https://formbuilder.online/" target="_blank">jQuery.formbuilder</a>
+                                        that allowing you to build and
+                                        manage simple html forms using simple
+                                        drag-and-drop action.
+                                    </p>
+                                    <p>
+                                        This project inspired by my previous project
+                                        <a href="https://github.com/meshesha/SimplePhpFormBuilder"
+                                            target="_blank"></a>SimplePhpFormBuilder</a>
+                                        and <a href="https://github.com/jazmy/laravel-formbuilder"
+                                            target="_blank"></a>Laravel Form Builder
+                                        Package</a>.
+                                    </p>
+                                    <div class="github-btn mb-1">
+                                        <a class="github-button" href="https://github.com/meshesha/VisualFormMaker"
+                                            data-size="large"
+                                            aria-label="Star meshesha/VisualFormMaker on GitHub">GitHub</a>
+                                    </div>
+                                </div>
+                                <div id="features" class="section-block">
+                                    <h3 class="block-title">Features</h3>
+                                    <ul>
+                                        <li>build simple form visually (drag and drop)</li>
+                                        <li>mange forms</li>
+                                        <li>mange submitted form data</li>
+                                        <li>mange users and profiles</li>
+                                        <li>mange groups</li>
+                                        <li>mange organization tree</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <!--//doc-section-->
+                            <section id="installation-section" class="doc-section">
+                                <h2 class="section-title">Installation</h2>
+                                <div id="requirements" class="section-block">
+                                    <h3 class="block-title">Requirements</h3>
+                                    <ul>
+                                        <li>web server (iis , apache, ...)</li>
+                                        <li>php : ^7.2.5</li>
+                                        <li>database : sqlite, mysql, pgsql, sqlsrv (tested in MySQL version 8 and
+                                            sqlite)</li>
+                                    </ul>
+                                </div>
+                                <!--//section-block-->
+                                <div id="installing" class="section-block">
+                                    <h3 class="block-title">Installing</h3>
+                                    <p>Two ways to install the app, using composer or by manually downloading from
+                                        GITHUB.
+                                    </p>
+                                    <div>
+                                        <h4>option 1 - using composer:</h4>
+                                        <ol class="list">
+                                            <li><a href="https://john-dugan.com/add-php-windows-path-variable/"
+                                                    target="_blank">Make sure you have PHP to Your Windows Path
+                                                    Variable</a></li>
+                                            <li>Make sure you have <a href="https://getcomposer.org/"
+                                                    target="_blank">Composer</a> installed on your machine.</li>
+                                            <li>open command line program (cmd, powerhell, gitbash ...)</li>
+                                            <li>navigate to your web-server root folder</li>
+                                            <li>run:
+                                                <div class="code-block">
+                                                    <code>composer create-project meshesha/visual-form-maker visualformmaker --no-dev</code>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                    <div>
+                                        <h4>option 2 - manually downloaded:</h4>
+                                        <ol class="list">
+                                            <li><a href="https://github.com/meshesha/VisualFormMaker/releases"
+                                                    target="_blank"> download</a> Source code
+                                                ('zip' or 'tar.gz') from github last release.
+                                            </li>
+                                            <li>unzip the downloaded file.</li>
+                                            <li>copy visualformmaker folder to the root of your web server.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <!--//section-block-->
+                                <div id="configuration" class="section-block">
+                                    <h3 class="block-title">Configuration</h3>
+                                    <h4>1. Web server:</h4>
+                                    <h5>1.a. IIS server:</h5>
+                                    <ol class="list">
+                                        <li class="list-item"><a
+                                                href="https://docs.microsoft.com/en-us/iis/application-frameworks/scenario-build-a-php-website-on-iis/configuring-step-1-install-iis-and-php"
+                                                target="_blank">install iis and php.</a></li>
+                                        <ul class="list">
+                                            <li><a href="https://john-dugan.com/add-php-windows-path-variable/"
+                                                    target="_blank">Make sure you have PHP to Your
+                                                    Windows Path
+                                                    Variable</a></li>
+                                        </ul>
+                                        <li>Create Website in IIS:
+                                            <ol class="list">
+                                                <li>Start IIS (by typing 'inetmgr' in run window)</li>
+                                                <li>Add new Website:
+                                                    <p>
+                                                        In the left side base expand the tree and select the Sites
+                                                        option. Then Right-click on Sites and select Add Website…
+                                                        option like the following image.<br>
+                                                        <img src="images/iis/add-website.png" width="70%" />
+                                                    </p>
+                                                    <p>
+                                                        This will open a popup to input new website details. Input the
+                                                        following details in pop-up box.
+                                                    <ul class="list">
+                                                        <li><b>Site name:</b> <i>visualformmaker</i></li>
+                                                        <li><b>Application pool:</b> <i>DefaultAppPool</i></li>
+                                                        <li><b>Physical path:</b>
+                                                            <i>C:\inetpub\wwwroot\visualformmaker\public</i>.</li>
+                                                    </ul>
+                                                    <img src="images/iis/add-website-details.png" width="50%" />
+                                                    </p>
+                                                </li>
+                                                <li><b>Storage folder Permissions</b>: In File Explorer, right click on
+                                                    the
+                                                    storage folder in C:\inetpub\wwwroot\visualformmaker and select
+                                                    Properties. Under
+                                                    the Security tab, grant full control of the storage folder to IUSR.
+                                                </li>
+                                                <li><b>Cache folder Permissions</b>: In File Explorer, right click on
+                                                    the
+                                                    cache folder in C:\inetpub\wwwroot\visualformmaker\bootstrap and
+                                                    select
+                                                    Properties. Under
+                                                    the Security tab, grant full control of the storage folder to IUSR.
+                                                </li>
+                                                <li><b>URL Rewite </b> : The rewrite rule definitions in the web.config
+                                                    require the <a
+                                                        href="https://www.iis.net/downloads/microsoft/url-rewrite"
+                                                        target="_blank">URL Rewite</a> extension.</li>
+                                                <li><a href="https://jimfrenette.com/2016/09/laravel-iis-windows-install/"
+                                                        target="_blank">more details...</a></li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                    <h5>1.b. XAMPP/WAMP:</h5>
+                                    <p>
+                                        <a href="https://medium.com/@insidert/setting-up-laravel-project-on-windows-2aa7e4f080da"
+                                            target="_blank">Setting up a Laravel project on Windows with XAMPP /
+                                            WAMP.</a>
+                                    </p>
+                                    <h5>1.c. Apache:</h5>
+                                    <p><a href="https://phpraxis.wordpress.com/2016/08/02/steps-for-configuring-laravel-on-apache-http-server/"
+                                            target="_blank">
+                                            Steps for configuring Laravel on Apache HTTP Server</a>
+                                    </p>
+                                    <h4>2. Database:</h4>
+                                    <p>setup database server and create database called 'visualformmaker'.<br>
+                                        <span class="text-warning">note: this step is optional in MySQL and
+                                            sqlite.</span>
+                                    </p>
+                                </div>
+                                <div id="application_installation" class="section-block">
+                                    <h4>Application Installation Process</h4>
+                                    <ol class="list">
+                                        <li class="list-item">open web browser and go to to application link (e.g.:
+                                            http://localhost/visualformmaker).</li>
+                                        <li>follow the instructions:
+                                            <div class="pb-2 mb-2">
+                                                <a class="float-left btn btn-primary" href="#carousel_indicators"
+                                                    data-slide="prev"
+                                                    onclick="$('#carousel_indicators').carousel('prev')">Previous</a>
+                                                <a class="float-right btn btn-primary" href="#carousel_indicators"
+                                                    data-slide="next"
+                                                    onclick="$('#carousel_indicators').carousel('next')">Next</a>
+                                            </div>
+                                            <div id="carousel_indicators" class="carousel slide mt-1"
+                                                data-ride="carousel" data-interval="false">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carousel_indicators" data-slide-to="0"
+                                                        class="active"></li>
+                                                    <li data-target="#carousel_indicators" data-slide-to="1"></li>
+                                                    <li data-target="#carousel_indicators" data-slide-to="2"></li>
+                                                    <li data-target="#carousel_indicators" data-slide-to="3"></li>
+                                                    <li data-target="#carousel_indicators" data-slide-to="4"></li>
+                                                    <li data-target="#carousel_indicators" data-slide-to="5"></li>
+                                                    <li data-target="#carousel_indicators" data-slide-to="6"></li>
+                                                    <li data-target="#carousel_indicators" data-slide-to="8"></li>
+                                                    <li data-target="#carousel_indicators" data-slide-to="9"></li>
+                                                    <li data-target="#carousel_indicators" data-slide-to="10"></li>
+                                                    <li data-target="#carousel_indicators" data-slide-to="11"></li>
+                                                    <li data-target="#carousel_indicators" data-slide-to="12"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item bg-secondary p-1 active">
+                                                        <a href="images/vfm_installer/1.png" target="_blank">
+                                                            <img src="images/vfm_installer/slide/1.png"
+                                                                class="rounded mx-auto d-block img-fluid w-80"
+                                                                alt="Step 1">
+                                                        </a>
+                                                        <!-- 
+                                                        <div class="carousel-caption d-md-block">
+                                                            <h5>hello</h5>
+                                                            <p>Test</p>
+                                                        </div> 
+                                                        -->
+                                                    </div>
+                                                    <div class="carousel-item bg-secondary p-1">
+                                                        <a href="images/vfm_installer/2.png" target="_blank">
+                                                            <img src="images/vfm_installer/slide/2.png"
+                                                                class="rounded mx-auto d-block img-fluid w-80"
+                                                                alt="Step 2">
+                                                        </a>
+                                                    </div>
+                                                    <div class="carousel-item bg-secondary p-1">
+                                                        <a href="images/vfm_installer/3.png" target="_blank">
+                                                            <img src="images/vfm_installer/slide/3.png"
+                                                                class="rounded mx-auto d-block img-fluid w-80"
+                                                                alt="Step 3">
+                                                        </a>
+                                                    </div>
+                                                    <div class="carousel-item bg-secondary p-1">
+                                                        <a href="images/vfm_installer/4.png" target="_blank">
+                                                            <img src="images/vfm_installer/slide/4.png"
+                                                                class="rounded mx-auto d-block img-fluid w-80"
+                                                                alt="Step 4">
+                                                        </a>
+                                                    </div>
+                                                    <div class="carousel-item bg-secondary p-1">
+                                                        <a href="images/vfm_installer/5.png" target="_blank">
+                                                            <img src="images/vfm_installer/slide/5.png"
+                                                                class="rounded mx-auto d-block img-fluid w-80"
+                                                                alt="Step 5">
+                                                        </a>
+                                                    </div>
+                                                    <div class="carousel-item bg-secondary p-1">
+                                                        <a href="images/vfm_installer/6.png" target="_blank">
+                                                            <img src="images/vfm_installer/slide/6.png"
+                                                                class="rounded mx-auto d-block img-fluid w-80"
+                                                                alt="Step 6">
+                                                        </a>
+                                                    </div>
+                                                    <div class="carousel-item bg-secondary p-1">
+                                                        <a href="images/vfm_installer/7.0.png" target="_blank">
+                                                            <img src="images/vfm_installer/slide/7.png"
+                                                                class="rounded mx-auto d-block img-fluid w-80"
+                                                                alt="Step 7">
+                                                        </a>
+                                                    </div>
+                                                    <div class="carousel-item bg-secondary p-1">
+                                                        <a href="images/vfm_installer/8.png" target="_blank">
+                                                            <img src="images/vfm_installer/slide/8.png"
+                                                                class="rounded mx-auto d-block img-fluid w-80"
+                                                                alt="Step 8">
+                                                        </a>
+                                                    </div>
+                                                    <div class="carousel-item bg-secondary p-1"><a
+                                                            href="images/vfm_installer/9.png" target="_blank">
+                                                            <img src="images/vfm_installer/slide/9.png"
+                                                                class="rounded mx-auto d-block img-fluid w-80"
+                                                                alt="Step 9">
+                                                        </a>
+                                                    </div>
+                                                    <div class="carousel-item bg-secondary p-1"><a
+                                                            href="images/vfm_installer/10.png" target="_blank">
+                                                            <img src="images/vfm_installer/slide/10.png"
+                                                                class="rounded mx-auto d-block img-fluid w-80"
+                                                                alt="Step 10">
+                                                        </a>
+                                                        <div class="carousel-caption d-md-block">
+                                                            <h5>first time login</h5>
+                                                            <p>
+                                                                <span><b>email</b>: <i>admin@localhost</i></span><br>
+                                                                <span><b>password</b>: <i>admin</i></span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item bg-secondary p-1"><a
+                                                            href="images/vfm_installer/11.png" target="_blank">
+                                                            <img src="images/vfm_installer/slide/11.png"
+                                                                class="rounded mx-auto d-block img-fluid w-80"
+                                                                alt="Step 11">
+                                                        </a>
+                                                    </div>
+                                                    <div class="carousel-item bg-secondary p-1">
+                                                        <img src="images/vfm_installer/slide/12.png"
+                                                            class="rounded mx-auto d-block img-fluid w-80" alt="End">
+                                                        <div class="carousel-caption d-md-block">
+                                                            <h5>END</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#carousel_indicators"
+                                                    role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carousel_indicators"
+                                                    role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>first time login
+                                            <p>
+                                                <span><b>email</b>: <i>admin@localhost</i></span><br>
+                                                <span><b>password</b>: <i>admin</i></span>
+                                            </p>
+                                        </li>
+                                    </ol>
+
+                                </div>
+                                <!--//section-block-->
+                            </section>
+                            <!--//doc-section-->
+
+                            <section id="usage-section" class="doc-section">
+                                <h2 class="section-title">Usage</h2>
+                                <div id="dashboard" class="section-block">
+                                    <div class="code-block">
+                                        <h3>Dashboard</h3>
+                                        <p>Main Dashboard view:</p>
+                                        <div class="w-100">
+                                            <a href="images/usage/dashboard/dashboard_explainer.png" target="_blank">
+                                                <img src="images/usage/dashboard/dashboard_explainer.png"
+                                                    class="rounded mx-auto d-block img-fluid w-80" alt="Dashboard">
+                                            </a>
+                                        </div>
+                                        <div class="code-block">
+                                            <h5>User Profile</h5>
+                                            <p>To show profile data goto user dropdown menu and click 'Profile':</p>
+                                            <div class="w-100">
+                                                <a href="images/usage/profile/1.png" target="_blank">
+                                                    <img src="images/usage/profile/1.png"
+                                                        class="border rounded  d-block img-fluid w-50"
+                                                        alt="Display User Profile">
+                                                </a>
+                                                <p>
+                                                    Show user profile data.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="code-block">
+                                            <h5>Edit user Profile</h5>
+                                            <p>To edit profile data, click 'edit' tab:</p>
+                                            <div class="w-100">
+                                                <a href="images/usage/profile/2.png" target="_blank">
+                                                    <img src="images/usage/profile/2.png"
+                                                        class="border rounded d-block img-fluid w-50"
+                                                        alt="Edit user Profile">
+                                                </a>
+                                                <p>Here you can to chenge your name, email and profile picture.</p>
+                                            </div>
+                                        </div>
+                                        <div class="code-block">
+                                            <h5>Change user password</h5>
+                                            <p>To change your password, click 'Password' tab:</p>
+                                            <div class="w-100">
+                                                <a href="images/usage/profile/2.png" target="_blank">
+                                                    <img src="images/usage/profile/3.png"
+                                                        class="border rounded d-block img-fluid w-50"
+                                                        alt="Change user password">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!--//section-block-->
+                                <div id="forms" class="section-block">
+                                    <div class="code-block">
+                                        <h3>Forms</h3>
+                                        <p>To go to forms management area, click 'Forms' link in main dashboard area or
+                                            in sidebar menu click 'Forms' and then click 'All Forms'.</p>
+                                        <div class="w-100">
+                                            <a href="images/usage/forms/all_forms.png" target="_blank">
+                                                <img src="images/usage/forms/all_forms.png"
+                                                    class="border rounded d-block img-fluid w-80" alt="Forms">
+                                            </a>
+                                        </div>
+                                        <div class="code-block">
+                                            <h5>Create new form</h5>
+                                            <p>To create new form, click 'Create new form' button:</p>
+                                            <div class="w-100">
+                                                <a href="images/usage/forms/create_new_form_expatiations.png"
+                                                    target="_blank">
+                                                    <img src="images/usage/forms/create_new_form_expatiations.png"
+                                                        class="border rounded d-block img-fluid w-80" alt="Forms">
+                                                </a>
+                                                <ol class="list">
+                                                    <li>Enter form name.(*Required)</li>
+                                                    <li>Select form visibility.(*Required)
+                                                        <ul>
+                                                            <li>Public<br>
+                                                                <img src="images/usage/forms/visibility_public.png"
+                                                                    class="border rounded d-block img-fluid w-60"
+                                                                    alt="public visibility">
+                                                                <ul>
+                                                                    <li>All users can access to the form
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Registered users<br>
+                                                                <img src="images/usage/forms/visibility_registeres_users.png"
+                                                                    class="border rounded d-block img-fluid w-60"
+                                                                    alt="registered users visibility">
+                                                                <ul>
+                                                                    <li>All registered users can access to the form.
+                                                                        The user must be logged in to access the form.
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#groups">Groups</a><br>
+                                                                <img src="images/usage/forms/visibility_groups.png"
+                                                                    class="border rounded d-block img-fluid w-60"
+                                                                    alt="groups visibility">
+                                                                <ul>
+                                                                    <li>On the right, select the groups to which you
+                                                                        want this form to be visible (multi-selections)
+                                                                    </li>
+                                                                    <li>Accessible to users in selected groups.
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#organization">Departments</a><br>
+                                                                <img src="images/usage/forms/visibility_deps.png"
+                                                                    class="border rounded d-block img-fluid w-60"
+                                                                    alt="departments visibility">
+                                                                <ul>
+                                                                    <li>On the right, select the departments to
+                                                                        which
+                                                                        you want this form to be visible
+                                                                        (multi-selections)</li>
+                                                                    <li>Accessible to users in selected departments.
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Drag a field/elements from the controls area to drop
+                                                        area.
+                                                        <ul>
+                                                            <li>On the right side of each field there are three buttons,
+                                                                which allow you to delete the field, edit the field or
+                                                                duplicate the field:
+                                                                <a href="images/usage/forms/field_action.png"
+                                                                    target="_blank">
+                                                                    <img src="images/usage/forms/field_action.png"
+                                                                        class="border rounded d-block img-fluid w-80"
+                                                                        alt="Field actions">
+                                                                </a>
+                                                            </li>
+                                                            <li>Each field has many different properties that can be
+                                                                edited:
+                                                                <a href="images/usage/forms/edit_field.png"
+                                                                    target="_blank">
+                                                                    <img src="images/usage/forms/edit_field.png"
+                                                                        class="border rounded d-block img-fluid w-80"
+                                                                        alt="Edit Field">
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>When you have finished building the form, click the 'Save Form'
+                                                        button.
+                                                    </li>
+                                                    <li>The new form you have built will be added to the form list
+                                                        table:
+                                                        <a href="images/usage/forms/forms_list.png" target="_blank">
+                                                            <img src="images/usage/forms/forms_list.png"
+                                                                class="border rounded d-block img-fluid w-60"
+                                                                alt="Forms list">
+                                                        </a>
+                                                        <ul>
+                                                            <li>As you can see in the Status column, this form has not
+                                                                yet been published, it means that a form is not yet
+                                                                accessible to
+                                                                the public.
+                                                                To publish the form and take further action, we will see
+                                                                in the next step.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                                <h5>Form details</h5>
+                                                <p>
+                                                    (publish/unpublished form, edit form, form url, preview form, etc.)
+                                                </p>
+                                                <p>Click the 'Details' button in the 'Actions' column:</p>
+                                                <a href="images/usage/forms/form_details.png" target="_blank">
+                                                    <img src="images/usage/forms/form_details.png"
+                                                        class="border rounded d-block img-fluid w-60"
+                                                        alt="Forms details">
+                                                </a>
+                                                <h6 class="m-2">Buttons</h6>
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>name</th>
+                                                            <th>description</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Preview</td>
+                                                            <td>Shows the form - In case you want to see a preview
+                                                                before publishing.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Edit form</td>
+                                                            <td>Edit the form - In case you want to fix, add fields,
+                                                                etc.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Submissions</td>
+                                                            <td>show all submitted data of this form in table.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Delete form</td>
+                                                            <td>Deleting the forms and all submitted data.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <h6 class="m-2">Other fields</h6>
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>name</th>
+                                                            <th>description</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Form status</td>
+                                                            <td>publish or unpublished form by clicking the desire
+                                                                button.<br>
+                                                                <i>note: if you publish the form,you cannot to edit
+                                                                    the form.</i>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Public URL</td>
+                                                            <td>
+                                                                The url of the form.
+                                                                You can copy the form by clicking the button next the
+                                                                url.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Form Managers</td>
+                                                            <td>
+                                                                List of users who can edit managing the form.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Allows Edit</td>
+                                                            <td>
+                                                                Can the user edit the form he filled out after
+                                                                submitting it. (Not relevant to public form)
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Visibility</td>
+                                                            <td>
+                                                                To whom the form is accessible. Can only be changed by
+                                                                edit mode
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Owner</td>
+                                                            <td>
+                                                                User who created the form
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Current Submissions</td>
+                                                            <td>
+                                                                Total Submissions for this moment.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Last Updated On</td>
+                                                            <td>
+                                                                Date the form was recently edited
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Created On</td>
+                                                            <td>
+                                                                Date the form was created
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="code-block">
+                                            <h5>Submitted form data</h5>
+                                            <p>There are two ways to show submitted data of a form:</p>
+                                            <ol>
+                                                <li>'All forms' table and click the 'Data' button on 'Actions' column.
+                                                </li>
+                                                <li>In form details page click 'Submissions' button.</li>
+                                            </ol>
+                                            <h6>Submitted form data table:</h6>
+                                            <a href="images/usage/forms/submitted_data_table.png" target="_blank">
+                                                <img src="images/usage/forms/submitted_data_table.png"
+                                                    class="border rounded d-block img-fluid w-60" alt="Forms details">
+                                            </a>
+                                            <h6>Submitted details data page:</h6>
+                                            <a href="images/usage/forms/submitted_details_page.png" target="_blank">
+                                                <img src="images/usage/forms/submitted_details_page.png"
+                                                    class="border rounded d-block img-fluid w-60" alt="Forms details">
+                                            </a>
+
+                                            <h6 class="m-2">Buttons</h6>
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>name</th>
+                                                        <th>description</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>View</td>
+                                                        <td>Shows details</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Edit</td>
+                                                        <td>Re-edit the submitted data.(if 'Allows Edit' => 'yes' )
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Delete</td>
+                                                        <td>Delete the submitted data.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Details (in Submitted details data page)</td>
+                                                        <td>Goto form details page.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!--//code-block-->
+                                </div>
+                                <!--//section-block-->
+                                <div id="my_submissions" class="section-block">
+                                    <div class="code-block">
+                                        <h3>My Submissions</h3>
+                                        <p>List of forms submitted by the user.</p>
+                                        <p>Click 'My Submissions' link in main dashboard area or
+                                            in sidebar menu click 'Forms' and then click 'My Submissions'.</p>
+                                        <div class="w-100">
+                                            <a href="images/usage/forms/my_submissions_table.png" target="_blank">
+                                                <img src="images/usage/forms/my_submissions_table.png"
+                                                    class="border rounded d-block img-fluid w-80" alt="Forms">
+                                            </a>
+                                            <h6 class="m-2">description</h6>
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>name</th>
+                                                        <th>description</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>'Form' column</td>
+                                                        <td>The form name.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>'Updated On' column</td>
+                                                        <td>Date and time the form was updated and resubmitted, if not
+                                                            updated then it will be the same as the date and time the
+                                                            form was first submitted.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>'Created On' column</td>
+                                                        <td>Date and time the form was first time submitted.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>'View' button</td>
+                                                        <td>shows submitted details data page</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>'Edit' button</td>
+                                                        <td>Re-edit the submitted data.(if 'Allows Edit' is 'yes' )</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>'Delete' button</td>
+                                                        <td>Delete the submitted data.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="users" class="section-block">
+                                    <div class="code-block">
+                                        <h3>Users</h3>
+                                    </div>
+                                    <!--//code-block-->
+                                </div>
+                                <!--//section-block-->
+                                <div id="groups" class="section-block">
+                                    <div class="code-block">
+                                        <h3>Groups/Roles</h3>
+
+                                    </div>
+                                    <!--//code-block-->
+                                </div>
+                                <!--//section-block-->
+                                <div id="organization" class="section-block">
+                                    <div class="code-block">
+                                        <h3>Organization</h3>
+
+                                    </div>
+                                    <!--//code-block-->
+                                </div>
+                                <!--//section-block-->
+                            </section>
+                            <!--//doc-section-->
+                            <section id="settings-section" class="doc-section">
+                                <h2 class="section-title">Settings</h2>
+                                <div class="section-block">
+
+                                </div>
+                            </section>
+                            <!--//doc-section-->
+                        </div>
+                        <!--//content-inner-->
+                    </div>
+                    <!--//doc-content-->
+                </div>
+                <!--//doc-body-->
+            </div>
+            <!--//container-->
+        </div>
+        <!--//doc-wrapper-->
+
+    </div>
+    <!--//page-wrapper-->
+
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            <small class="copyright float-left">Copyright © 2020 <a href="vfm.js.org"
+                    target="_blank">VisualFormMaker</a>. All
+                rights reserved.</small>
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright float-right">Designed with <i class="fas fa-heart"></i> by <a
+                    href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
+
+        </div>
+        <!--//container-->
+    </footer>
+    <!--//footer-->
+
+
+    <!-- Main Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+
+</html>
