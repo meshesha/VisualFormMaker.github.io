@@ -504,7 +504,7 @@
                                                         <ul>
                                                             <li>Public<br>
                                                                 <img src="images/usage/forms/visibility_public.png"
-                                                                    class="border rounded d-block img-fluid w-60"
+                                                                    class="border rounded d-block img-fluid w-50"
                                                                     alt="public visibility">
                                                                 <ul>
                                                                     <li>All users can access to the form
@@ -513,7 +513,7 @@
                                                             </li>
                                                             <li>Registered users<br>
                                                                 <img src="images/usage/forms/visibility_registeres_users.png"
-                                                                    class="border rounded d-block img-fluid w-60"
+                                                                    class="border rounded d-block img-fluid w-50"
                                                                     alt="registered users visibility">
                                                                 <ul>
                                                                     <li>All registered users can access to the form.
@@ -523,7 +523,7 @@
                                                             </li>
                                                             <li><a href="#groups">Groups</a><br>
                                                                 <img src="images/usage/forms/visibility_groups.png"
-                                                                    class="border rounded d-block img-fluid w-60"
+                                                                    class="border rounded d-block img-fluid w-50"
                                                                     alt="groups visibility">
                                                                 <ul>
                                                                     <li>On the right, select the groups to which you
@@ -535,7 +535,7 @@
                                                             </li>
                                                             <li><a href="#organization">Departments</a><br>
                                                                 <img src="images/usage/forms/visibility_deps.png"
-                                                                    class="border rounded d-block img-fluid w-60"
+                                                                    class="border rounded d-block img-fluid w-50"
                                                                     alt="departments visibility">
                                                                 <ul>
                                                                     <li>On the right, select the departments to
@@ -767,49 +767,128 @@
                                                 <img src="images/usage/forms/my_submissions_table.png"
                                                     class="border rounded d-block img-fluid w-80" alt="Forms">
                                             </a>
-                                            <h6 class="m-2">description</h6>
-                                            <table class="table table-bordered">
-                                                <thead>
-                                                    <tr>
-                                                        <th>name</th>
-                                                        <th>description</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>'Form' column</td>
-                                                        <td>The form name.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>'Updated On' column</td>
-                                                        <td>Date and time the form was updated and resubmitted, if not
-                                                            updated then it will be the same as the date and time the
-                                                            form was first submitted.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>'Created On' column</td>
-                                                        <td>Date and time the form was first time submitted.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>'View' button</td>
-                                                        <td>shows submitted details data page</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>'Edit' button</td>
-                                                        <td>Re-edit the submitted data.(if 'Allows Edit' is 'yes' )</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>'Delete' button</td>
-                                                        <td>Delete the submitted data.</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
                                         </div>
+                                        <h6 class="m-2">description</h6>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>name</th>
+                                                    <th>description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>'Form' column</td>
+                                                    <td>The form name.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Updated On' column</td>
+                                                    <td>Date and time the form was updated and resubmitted, if not
+                                                        updated then it will be the same as the date and time the
+                                                        form was first submitted.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Created On' column</td>
+                                                    <td>Date and time the form was first time submitted.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'View' button</td>
+                                                    <td>shows submitted details data page</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Edit' button</td>
+                                                    <td>Re-edit the submitted data.(if 'Allows Edit' is 'yes' )</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Delete' button</td>
+                                                    <td>Delete the submitted data.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                                 <div id="users" class="section-block">
                                     <div class="code-block">
                                         <h3>Users</h3>
+                                        <p>Click 'Users' link in main dashboard area or
+                                            in sidebar menu .</p>
+                                        <div class="w-100">
+                                            <a href="images/usage/users/users_table.png" target="_blank">
+                                                <img src="images/usage/users/users_table.png"
+                                                    class="border rounded d-block img-fluid w-80" alt="Users table">
+                                            </a>
+                                        </div>
+                                        <h6 class="m-2">description</h6>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>name</th>
+                                                    <th>description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>'Name' column</td>
+                                                    <td>The user name.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'email' column</td>
+                                                    <td>The user email.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Department' column</td>
+                                                    <td>The user Department. can be only one Department.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Roles/Groups' column</td>
+                                                    <td>The user Roles/Groups. user can have multiple roles/groups.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Edit' button</td>
+                                                    <td>Edit and update user data.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Delete' button</td>
+                                                    <td>Delete the user.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'New user' button</td>
+                                                    <td>Create new user</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <br>
+                                        <h5>New user</h5>
+                                        <p>create a new user.</p>
+                                        <div class="w-100">
+                                            <a href="images/usage/users/new_user.png" target="_blank">
+                                                <img src="images/usage/users/new_user.png"
+                                                    class="border rounded d-block img-fluid w-50" alt="New user">
+                                            </a>
+                                            <br>
+                                            <p>Fill in the fields and click the 'Save User' button:</p>
+                                            <a href="images/usage/users/new_user_full.png" target="_blank">
+                                                <img src="images/usage/users/new_user_full.png"
+                                                    class="border rounded d-block img-fluid w-50" alt="New user">
+                                            </a>
+                                        </div>
+                                        <br>
+                                        <h5>Edit user</h5>
+                                        <p>Edit and update user data.</p>
+                                        <div class="w-100">
+                                            <a href="images/usage/users/edit_user.png" target="_blank">
+                                                <img src="images/usage/users/edit_user.png"
+                                                    class="border rounded d-block img-fluid w-50" alt="Edit user">
+                                            </a>
+                                            <br>
+                                            <h6>Here you can also change and reset the user's password:</h6>
+                                            <p>Click the 'Change Password' button:</p>
+                                            <a href="images/usage/users/change_password.png" target="_blank">
+                                                <img src="images/usage/users/change_password.png"
+                                                    class="border rounded d-block img-fluid w-50"
+                                                    alt="Change user password">
+                                            </a>
+                                        </div>
                                     </div>
                                     <!--//code-block-->
                                 </div>
@@ -817,7 +896,88 @@
                                 <div id="groups" class="section-block">
                                     <div class="code-block">
                                         <h3>Groups/Roles</h3>
-
+                                        <p>Click 'Groups' link in main dashboard area or
+                                            'Groups/Roles' link in sidebar menu .</p>
+                                        <div class="w-100">
+                                            <a href="images/usage/groups/groups_table.png" target="_blank">
+                                                <img src="images/usage/groups/groups_table.png"
+                                                    class="border rounded d-block img-fluid w-80" alt="Groups table">
+                                            </a>
+                                        </div>
+                                        <h6 class="m-2">description</h6>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>name</th>
+                                                    <th>description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>'Name' column</td>
+                                                    <td>The Group name.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'status' column</td>
+                                                    <td>If the group is active or disabled.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'create at' column</td>
+                                                    <td>The date the group was created</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Show' button</td>
+                                                    <td>display the group data and list of members.<br>
+                                                        <div class="w-00">
+                                                            <a href="images/usage/groups/show_group.png"
+                                                                target="_blank">
+                                                                <img src="images/usage/groups/show_group.png"
+                                                                    class="border rounded d-block img-fluid w-50"
+                                                                    alt="Show Group data">
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Edit' button</td>
+                                                    <td>Edit and update group data (status and name).<br>
+                                                        <div class="w-00">
+                                                            <a href="images/usage/groups/edit_group.png"
+                                                                target="_blank">
+                                                                <img src="images/usage/groups/edit_group.png"
+                                                                    class="border rounded d-block img-fluid w-50"
+                                                                    alt="Edit Group">
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Delete' button</td>
+                                                    <td>Delete the group.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'New group' button</td>
+                                                    <td>Create new group.<br>
+                                                        <div class="w-00">
+                                                            <a href="images/usage/groups/new_group.png" target="_blank">
+                                                                <img src="images/usage/groups/new_group.png"
+                                                                    class="border rounded d-block img-fluid w-50"
+                                                                    alt="New Group">
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <br>
+                                        <div class="alert alert-danger" role="alert">
+                                            The groups: 'Administrator','Manager' and 'Editor' - It is not recommended
+                                            to
+                                            delete or change them, many of the activities depend on the names of these
+                                            groups.<br>
+                                            'Administrator' - full control of the system.<br>
+                                            'Manager' and 'Editor' - partial control.
+                                        </div>
                                     </div>
                                     <!--//code-block-->
                                 </div>
@@ -825,7 +985,142 @@
                                 <div id="organization" class="section-block">
                                     <div class="code-block">
                                         <h3>Organization</h3>
+                                        <h4>Departments - Table view</h4>
+                                        <p>Click 'Departments' link in main dashboard area OR <br>
+                                            'Organization tree' => 'Table view' link in sidebar menu OR <br>
+                                            click 'Table view' button in 'Tree view' page .</p>
+                                        <div class="w-100">
+                                            <a href="images/usage/org/dep_table.png" target="_blank">
+                                                <img src="images/usage/org/dep_table.png"
+                                                    class="border rounded d-block img-fluid w-80"
+                                                    alt="Organization/Departments table">
+                                            </a>
+                                        </div>
+                                        <br>
+                                        <h6 class="m-2">description</h6>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>name</th>
+                                                    <th>description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>'Name' column</td>
+                                                    <td>The Department name.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'parent' column</td>
+                                                    <td>the name of the parent department.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Edit' button</td>
+                                                    <td>Edit and update department data. You can change a name , change
+                                                        the
+                                                        parent department and add or remove users.<br>
+                                                        <div class="w-00">
+                                                            <a href="images/usage/org/edit_dep.png" target="_blank">
+                                                                <img src="images/usage/org/edit_dep.png"
+                                                                    class="border rounded d-block img-fluid w-50"
+                                                                    alt="Edit Department">
+                                                            </a>
+                                                        </div>
 
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Delete' button</td>
+                                                    <td>Delete the department.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'New department' button</td>
+                                                    <td>Create new department.<br>
+                                                        <div class="w-00">
+                                                            <a href="images/usage/org/new_dep.png" target="_blank">
+                                                                <img src="images/usage/org/new_dep.png"
+                                                                    class="border rounded d-block img-fluid w-50"
+                                                                    alt="New Department">
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Tree view' button</td>
+                                                    <td>Taking you to 'tree' view .</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <br>
+                                        <h4>Departments - Tree view</h4>
+                                        <p>This page shows the organization in tree view mode.</p>
+                                        <p>'Organization tree' => 'Table view' link in sidebar menu OR <br>
+                                            click 'Tree view' button in 'Table view' page.</p>
+
+                                        <div class="w-100">
+                                            <a href="images/usage/org/dep_tree_view.png" target="_blank">
+                                                <img src="images/usage/org/dep_tree_view.png"
+                                                    class="border rounded d-block img-fluid w-80"
+                                                    alt="Organization/Departments table">
+                                            </a>
+                                        </div>
+                                        <h6 class="m-2">description</h6>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>name</th>
+                                                    <th>description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>'New department' button</td>
+                                                    <td>Create new department.<br>
+                                                        <div class="w-00">
+                                                            <a href="images/usage/org/new_dep.png" target="_blank">
+                                                                <img src="images/usage/org/new_dep.png"
+                                                                    class="border rounded d-block img-fluid w-50"
+                                                                    alt="New Department">
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Table view' button</td>
+                                                    <td>Taking you to 'table' view .</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'profile' button (inside user node)</td>
+                                                    <td>Display user profile page.<br>
+                                                        <div class="w-00">
+                                                            <a href="images/usage/org/user_profile_view.png"
+                                                                target="_blank">
+                                                                <img src="images/usage/org/user_profile_view.png"
+                                                                    class="border rounded d-block img-fluid w-50"
+                                                                    alt="User profile page">
+                                                            </a>
+                                                            <div class="alert alert-warning" role="alert">
+                                                                The user profile page is can be available to public (all
+                                                                users can see it without login).
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table><br>
+                                        <div class="alert alert-warning" role="alert">
+                                            The 'Tree view' page is available to public (all users can see it without
+                                            login),
+                                            by the link 'http(s)://.../org/tree'.<br>
+                                            <a href="images/usage/org/public_org_tree_view.png" target="_blank">
+                                                <img src="images/usage/org/public_org_tree_view.png"
+                                                    class="border rounded d-block img-fluid w-50"
+                                                    alt="User profile page">
+                                            </a>
+                                            <br>
+                                            You can control the user's profile data that shown in this page from the
+                                            settings page.
+                                        </div>
                                     </div>
                                     <!--//code-block-->
                                 </div>
