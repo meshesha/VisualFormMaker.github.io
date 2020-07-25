@@ -100,6 +100,15 @@
                                 </nav>
                                 <!--//nav-->
                                 <a class="nav-link scrollto" href="#settings-section">Settings</a>
+                                <!-- <nav class="doc-sub-menu nav flex-column">
+                                    <a class="nav-link scrollto" href="#settings-general">General</a>
+                                    <a class="nav-link scrollto" href="#settings-dashboard">Dashboard</a>
+                                    <a class="nav-link scrollto" href="#settings-forms">Forms</a>
+                                    <a class="nav-link scrollto" href="#settings-users">Users</a>
+                                    <a class="nav-link scrollto" href="#settings-groups">Groups/Roles</a>
+                                    <a class="nav-link scrollto" href="#settings-organization">Organization</a>
+                                </nav> -->
+
                             </nav>
                             <!--//doc-menu-->
 
@@ -1129,8 +1138,374 @@
                             <!--//doc-section-->
                             <section id="settings-section" class="doc-section">
                                 <h2 class="section-title">Settings</h2>
-                                <div class="section-block">
-
+                                <p>'Settings' link in sidebar menu.</p>
+                                <div id="settings-general" class="section-block">
+                                    <div class="code-block">
+                                        <h3>General</h3>
+                                        <p>'Settings' => 'General'.</p>
+                                        <div class="w-100">
+                                            <h5>General Tab - Application Settings</h5>
+                                            <a href="images/usage/settings/general/general.png" target="_blank">
+                                                <img src="images/usage/settings/general/general.png"
+                                                    class="border rounded d-block img-fluid w-50"
+                                                    alt="General Settings - general">
+                                            </a>
+                                            <br>
+                                            <h5>Database Tab - Database Settings</h5>
+                                            <a href="images/usage/settings/general/database.png" target="_blank">
+                                                <img src="images/usage/settings/general/database.png"
+                                                    class="border rounded d-block img-fluid w-50"
+                                                    alt="General Settings - database">
+                                            </a>
+                                            <br>
+                                            <h5>Mail Tab - Mail Settings</h5>
+                                            <a href="images/usage/settings/general/mail.png" target="_blank">
+                                                <img src="images/usage/settings/general/mail.png"
+                                                    class="border rounded d-block img-fluid w-50"
+                                                    alt="General Settings - mail">
+                                            </a>
+                                        </div>
+                                        <div class="alert alert-info" role="alert">
+                                            In order to change these settings, it is necessary to open the .env file and
+                                            edit it using a text editor.
+                                            The file is located in the root folder of the application.<br>
+                                            <h6>env file location</h6>
+                                            <a href="images/usage/settings/general/env_file_loc.png" target="_blank">
+                                                <img src="images/usage/settings/general/env_file_loc.png"
+                                                    class="border rounded d-block img-fluid w-50"
+                                                    alt="General Settings - env file location">
+                                            </a><br>
+                                            <h6>env file cntent</h6>
+                                            <a href="images/usage/settings/general/env_file.png" target="_blank">
+                                                <img src="images/usage/settings/general/env_file.png"
+                                                    class="border rounded d-block img-fluid w-50"
+                                                    alt="General Settings - env file location">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="settings-dashboard" class="section-block">
+                                    <div class="code-block">
+                                        <h3>Dashboard</h3>
+                                        <p>'Settings' => 'Dashboard'.</p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <a href="images/usage/settings/dashboard/dashboard.png" target="_blank">
+                                                    <img src="images/usage/settings/dashboard/dashboard.png"
+                                                        class="border rounded d-block img-fluid w-50"
+                                                        alt="Dashboard Settings">
+                                                </a>
+                                                <p>Show or hide the link cards in the main dashboard window by selecting
+                                                    Yes or No in the option.</p>
+                                            </div>
+                                            <div class="col"><a
+                                                    href="images/usage/settings/dashboard/dashboard_view.png"
+                                                    target="_blank">
+                                                    <img src="images/usage/settings/dashboard/dashboard_view.png"
+                                                        class="border rounded d-block img-fluid w-60"
+                                                        alt="Main Dashboard View">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="settings-forms" class="section-block">
+                                    <div class="code-block">
+                                        <h3>Forms</h3>
+                                        <p>'Settings' => 'Forms'.</p>
+                                        <div class="w-100">
+                                            <a href="images/usage/settings/forms/forms_settings.png" target="_blank">
+                                                <img src="images/usage/settings/forms/forms_settings.png"
+                                                    class="border rounded d-block img-fluid w-50" alt="Forms settings">
+                                            </a>
+                                        </div>
+                                        <h6 class="m-2">description</h6>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>name</th>
+                                                    <th>description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2">Forms Settings:</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'paginate'</td>
+                                                    <td>The number of rows to be displayed in the table per page
+                                                        ('Forms' table).
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Default allows edit'</td>
+                                                    <td>When creating a new form, whether the 'Allows Edit' option will
+                                                        be 'yes' or 'no' by default.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">User Submissions Settings:</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'paginate'</td>
+                                                    <td>The number of rows to be displayed in the table per page ('My
+                                                        Submissions' and 'Submitted data...' tables).</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Enable form details view'</td>
+                                                    <td>Enable or disable submission details view for Form
+                                                        'Manager'/'Editor' users.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Enable delete'</td>
+                                                    <td>Enable or disable delete submitted data for non 'Administrator'
+                                                        users.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="settings-users" class="section-block">
+                                    <div class="code-block">
+                                        <h3>Users</h3>
+                                        <p>'Settings' => 'Users'.</p>
+                                        <div class="w-100">
+                                            <a href="images/usage/settings/users/users_settings.png" target="_blank">
+                                                <img src="images/usage/settings/users/users_settings.png"
+                                                    class="border rounded d-block img-fluid w-50" alt="Users settings">
+                                            </a>
+                                        </div>
+                                        <h6 class="m-2">description</h6>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>name</th>
+                                                    <th>description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>'paginate'</td>
+                                                    <td>The number of rows to be displayed in the table per page
+                                                        ('Users' table).
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Default groups'</td>
+                                                    <td>When creating a new user, to which groups to attach the user as
+                                                        default.(multi-selections)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Default user status'</td>
+                                                    <td>Default user status when creating a new user.('active' or
+                                                        'disabled')</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Allow registration'</td>
+                                                    <td>Allow registration from the login page by the 'Register' button:
+                                                        <br>
+                                                        <a href="images/usage/settings/users/register.png"
+                                                            target="_blank">
+                                                            <img src="images/usage/settings/users/register.png"
+                                                                class="border rounded d-block img-fluid w-50"
+                                                                alt="users register">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Allow reset password on login page'</td>
+                                                    <td>Allow a password reset request from the login page:
+                                                        <br>
+                                                        <a href="images/usage/settings/users/login_forgot.png"
+                                                            target="_blank">
+                                                            <img src="images/usage/settings/users/login_forgot.png"
+                                                                class="border rounded d-block img-fluid w-50"
+                                                                alt="users password reset request link">
+                                                        </a><br>
+                                                        <a href="images/usage/settings/users/forgot.png"
+                                                            target="_blank">
+                                                            <img src="images/usage/settings/users/forgot.png"
+                                                                class="border rounded d-block img-fluid w-50"
+                                                                alt="users password reset request">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Allow remember on login page'</td>
+                                                    <td>Allow and show 'remember me' on login page:
+                                                        <br>
+                                                        <a href="images/usage/settings/users/login_remember.png"
+                                                            target="_blank">
+                                                            <img src="images/usage/settings/users/login_remember.png"
+                                                                class="border rounded d-block img-fluid w-50"
+                                                                alt="users login remember">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="settings-groups" class="section-block">
+                                    <div class="code-block">
+                                        <h3>Groups/Roles</h3>
+                                        <p>'Settings' => 'Groups/Roles'.</p>
+                                        <div class="w-100">
+                                            <a href="images/usage/settings/groups/groups_settings.png" target="_blank">
+                                                <img src="images/usage/settings/groups/groups_settings.png"
+                                                    class="border rounded d-block img-fluid w-50"
+                                                    alt="Groups/Roles settings">
+                                            </a>
+                                        </div>
+                                        <h6 class="m-2">description</h6>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>name</th>
+                                                    <th>description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>'paginate'</td>
+                                                    <td>The number of rows to be displayed in the table per page
+                                                        ('Groups/Roles' table).
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="settings-organization" class="section-block">
+                                    <div class="code-block">
+                                        <h3>Organization</h3>
+                                        <p>'Settings' => 'Organization'.</p>
+                                        <div class="w-100">
+                                            <a href="images/usage/settings/org/org_settings.png" target="_blank">
+                                                <img src="images/usage/settings/org/org_settings.png"
+                                                    class="border rounded d-block img-fluid w-50"
+                                                    alt="Organization settings">
+                                            </a>
+                                        </div>
+                                        <h6 class="m-2">description</h6>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>name</th>
+                                                    <th>description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2">Table View Settings:</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'paginate'</td>
+                                                    <td>The number of rows to be displayed in the table per page
+                                                        ('Departments' table view).
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">Tree View Setting:</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'direction'</td>
+                                                    <td>
+                                                        The direction of the organization tree.<br>
+                                                        Options:
+                                                        <ul>
+                                                            <li>NORTH - Expands from top to bottom:<br>
+                                                                <a href="images/usage/settings/org/dir_north.png"
+                                                                    target="_blank">
+                                                                    <img src="images/usage/settings/org/dir_north.png"
+                                                                        class="border rounded d-block img-fluid w-50"
+                                                                        alt="direction north">
+                                                                </a>
+                                                            </li>
+                                                            <li>SOUTH - Expands from bottom to top:<br>
+                                                                <a href="images/usage/settings/org/dir_south.png"
+                                                                    target="_blank">
+                                                                    <img src="images/usage/settings/org/dir_south.png"
+                                                                        class="border rounded d-block img-fluid w-50"
+                                                                        alt="direction south">
+                                                                </a>
+                                                            </li>
+                                                            <li>EAST - Expands from right to left:<br>
+                                                                <a href="images/usage/settings/org/dir_east.png"
+                                                                    target="_blank">
+                                                                    <img src="images/usage/settings/org/dir_east.png"
+                                                                        class="border rounded d-block img-fluid w-50"
+                                                                        alt="direction east">
+                                                                </a>
+                                                            </li>
+                                                            <li>WEST - Expands from left to right:<br>
+                                                                <a href="images/usage/settings/org/dir_west.png"
+                                                                    target="_blank">
+                                                                    <img src="images/usage/settings/org/dir_west.png"
+                                                                        class="border rounded d-block img-fluid w-50"
+                                                                        alt="direction west">
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Show user profile link'</td>
+                                                    <td>Show or hide profile link button in user node.<br>
+                                                        <a href="images/usage/settings/org/user_profile_link_in_node.png"
+                                                            target="_blank">
+                                                            <img src="images/usage/settings/org/user_profile_link_in_node.png"
+                                                                class="border rounded d-block img-fluid w-50"
+                                                                alt="user_profile_link_in_node">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Show user title'</td>
+                                                    <td>Show or hide user title in user node.<br>
+                                                        <a href="images/usage/settings/org/user_title_in_node.png"
+                                                            target="_blank">
+                                                            <img src="images/usage/settings/org/user_title_in_node.png"
+                                                                class="border rounded d-block img-fluid w-50"
+                                                                alt="user_title_in_node">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Show user email'</td>
+                                                    <td>Show or hide user email in user node.<br>
+                                                        <a href="images/usage/settings/org/user_email_in_node.png"
+                                                            target="_blank">
+                                                            <img src="images/usage/settings/org/user_email_in_node.png"
+                                                                class="border rounded d-block img-fluid w-50"
+                                                                alt="user_email_in_node">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Show user image'</td>
+                                                    <td>Show or hide user image in user node.<br>
+                                                        <a href="images/usage/settings/org/user_image_in_node.png"
+                                                            target="_blank">
+                                                            <img src="images/usage/settings/org/user_image_in_node.png"
+                                                                class="border rounded d-block img-fluid w-50"
+                                                                alt="user_image_in_node">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>'Show user name'</td>
+                                                    <td>Show or hide user name in user node.<br>
+                                                        <a href="images/usage/settings/org/user_name_in_node.png"
+                                                            target="_blank">
+                                                            <img src="images/usage/settings/org/user_name_in_node.png"
+                                                                class="border rounded d-block img-fluid w-50"
+                                                                alt="user_name_in_node">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </section>
                             <!--//doc-section-->

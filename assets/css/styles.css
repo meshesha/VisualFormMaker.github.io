@@ -861,6 +861,8 @@ select {
 
 .doc-menu {
   list-style: none;
+  
+  overflow-y: auto;
 }
 
 .doc-menu .nav-link {
